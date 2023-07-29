@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb021fb8d1cce1489a8510aa9c1305a, type: 3}
+  m_Name: Game Settings
+  m_EditorClassIdentifier: 
+  fire_speed: 2
+  bullets_buffer_size: 20
+  bullet_prefab: {fileID: 8097375476254433817, guid: ec8fd04f5c620ea499e798df9f10d4aa, type: 3}
+  fire_control_mode: 1
+  manual_fire_key: 32
+  fire_zone_radius: 0.75
+  fire_collider_width: 1
+  show_fire_zone: 1

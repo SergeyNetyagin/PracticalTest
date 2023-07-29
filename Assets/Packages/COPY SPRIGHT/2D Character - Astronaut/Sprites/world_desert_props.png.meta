@@ -1,0 +1,1582 @@
+fileFormatVersion: 2
+guid: 0ece8860f6ff7b949bcc603e99fefe92
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 603645287242772497
+    second: desert_00
+  - first:
+      213: -7974602523870333332
+    second: desert_01
+  - first:
+      213: -3423182936271661996
+    second: desert_02
+  - first:
+      213: 4284674182158804922
+    second: desert_03
+  - first:
+      213: 6787164276979903833
+    second: desert_04
+  - first:
+      213: 2567941382167779380
+    second: desert_05
+  - first:
+      213: 8399797157480521262
+    second: desert_06
+  - first:
+      213: -4777210899895168734
+    second: desert_07
+  - first:
+      213: 8808204310990145156
+    second: desert_08
+  - first:
+      213: -3804040947037838092
+    second: desert_09
+  - first:
+      213: -5247477216018157692
+    second: desert_10
+  - first:
+      213: -3460972217769975485
+    second: desert_11
+  - first:
+      213: -1480075248800286707
+    second: desert_12
+  - first:
+      213: -7610050251698506719
+    second: desert_13
+  - first:
+      213: 8995586243846556834
+    second: desert_14
+  - first:
+      213: 8138716566547507205
+    second: desert_15
+  - first:
+      213: -4426951511347678944
+    second: desert_16
+  - first:
+      213: -4706415463413810417
+    second: desert_17
+  - first:
+      213: 7239763507613098971
+    second: desert_18
+  - first:
+      213: 5193339312739914837
+    second: desert_19
+  - first:
+      213: 4586042437898403670
+    second: desert_20
+  - first:
+      213: -1210061087494552983
+    second: desert_21
+  - first:
+      213: -4376464478594356886
+    second: desert_22
+  - first:
+      213: 6764951060055437124
+    second: desert_23
+  - first:
+      213: 6036090671444133391
+    second: desert_24
+  - first:
+      213: -9108313243975394644
+    second: desert_25
+  - first:
+      213: 6086350934210807276
+    second: desert_26
+  - first:
+      213: 6113504827713440400
+    second: desert_27
+  - first:
+      213: 2170102749875775461
+    second: desert_28
+  - first:
+      213: 5009252554461591537
+    second: desert_29
+  - first:
+      213: -6017134472381283854
+    second: desert_30
+  - first:
+      213: -1289980170707381457
+    second: desert_31
+  - first:
+      213: -253039629862503317
+    second: desert_32
+  - first:
+      213: 7560240637562155887
+    second: desert_33
+  - first:
+      213: -5925195787746074683
+    second: desert_34
+  - first:
+      213: -5298877888225236985
+    second: desert_35
+  - first:
+      213: 5526159243907076637
+    second: desert_36
+  - first:
+      213: -6572502564683002171
+    second: desert_37
+  - first:
+      213: 450630147809655264
+    second: desert_38
+  - first:
+      213: 935077690449985897
+    second: desert_39
+  - first:
+      213: -4160982877747853288
+    second: desert_40
+  - first:
+      213: -5158333588085524203
+    second: desert_41
+  - first:
+      213: 7952620093082733047
+    second: desert_42
+  - first:
+      213: 5123185002986505607
+    second: desert_43
+  - first:
+      213: 5508764374069283482
+    second: desert_44
+  - first:
+      213: -3126556626230236997
+    second: desert_45
+  - first:
+      213: -7054342030048085410
+    second: desert_46
+  - first:
+      213: -8323902304186218002
+    second: desert_47
+  - first:
+      213: -2473120237353433645
+    second: desert_48
+  - first:
+      213: 7393140509645372239
+    second: desert_49
+  - first:
+      213: -1453876071181522927
+    second: desert_50
+  - first:
+      213: 6779792018670962513
+    second: desert_51
+  - first:
+      213: 6603234243875786851
+    second: desert_52
+  - first:
+      213: -4472599207150224834
+    second: desert_53
+  - first:
+      213: -3482703982757889624
+    second: desert_54
+  - first:
+      213: 5970056270686937492
+    second: desert_55
+  - first:
+      213: -7468717143681842183
+    second: desert_56
+  - first:
+      213: -2953436172587417070
+    second: desert_57
+  - first:
+      213: 3945742610200374897
+    second: desert_58
+  - first:
+      213: -5793209072370399710
+    second: desert_59
+  - first:
+      213: 1702975875050668778
+    second: desert_60
+  - first:
+      213: 3219539517677217092
+    second: desert_61
+  - first:
+      213: -4270375166321050829
+    second: desert_62
+  - first:
+      213: 8795609109585389182
+    second: desert_63
+  - first:
+      213: -8701727061573622797
+    second: desert_64
+  - first:
+      213: -2028491123275150444
+    second: desert_65
+  - first:
+      213: 1053506975521333329
+    second: desert_66
+  - first:
+      213: -4684342724628325552
+    second: desert_67
+  - first:
+      213: 6295810935878543926
+    second: desert_68
+  - first:
+      213: 8337366474431134053
+    second: desert_69
+  - first:
+      213: 1557204414222862326
+    second: desert_70
+  - first:
+      213: -3200042912569798477
+    second: desert_71
+  - first:
+      213: 1745449515367603455
+    second: desert_72
+  - first:
+      213: 867984542661781456
+    second: desert_73
+  - first:
+      213: -1650322904987810183
+    second: desert_74
+  - first:
+      213: 102207017504534023
+    second: desert_75
+  - first:
+      213: -6517341622997181111
+    second: desert_76
+  - first:
+      213: -8450327575515749352
+    second: desert_77
+  - first:
+      213: -1976259064128221561
+    second: desert_78
+  - first:
+      213: 5462939536306348155
+    second: desert_79
+  - first:
+      213: 6348069920170993569
+    second: desert_80
+  - first:
+      213: -3020095837972077549
+    second: desert_81
+  - first:
+      213: -4977288200035431295
+    second: desert_82
+  - first:
+      213: -4512607606108049138
+    second: desert_83
+  - first:
+      213: -397784250573409116
+    second: desert_84
+  - first:
+      213: -8270106941715750933
+    second: desert_85
+  - first:
+      213: -8924643723148356327
+    second: desert_86
+  - first:
+      213: 7856607297991558957
+    second: desert_87
+  - first:
+      213: 6096838974108760145
+    second: desert_88
+  - first:
+      213: 6805521430731647977
+    second: desert_89
+  - first:
+      213: 5120828842301437118
+    second: desert_90
+  - first:
+      213: -8521771309679822106
+    second: desert_91
+  - first:
+      213: 3076593628396238778
+    second: desert_92
+  - first:
+      213: -8247935984701386642
+    second: desert_93
+  - first:
+      213: 3905137884391206336
+    second: desert_94
+  - first:
+      213: 8889998157150073025
+    second: desert_95
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 130
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: world_desert_props_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86c0473599f8e845aa1d4b333d635db
+      internalID: -1205086152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 912
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e063ff78e73cb7a42b35384a08c26846
+      internalID: 1995608914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 143
+        width: 895
+        height: 897
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 265, y: 249, z: 242, w: 263}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37358e0bad435f54dbf68e828a405676
+      internalID: -892047444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 912
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b8b9ade5bb8c540ae070c8a1933e56
+      internalID: -1620363315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 912
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60c756bd24eb4a43b8d95c59ab2bf8b
+      internalID: 746401753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 912
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b3728899f1fe42a24853bb2de4e52
+      internalID: -271935305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecccc9828e49b543a215352a8985d04
+      internalID: -260299358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784014e291ee528489385a04c4f40583
+      internalID: -554515050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323a5b732c64c1145a552d028d8acfea
+      internalID: 313176396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_21
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e5e8281f212cb4d8c9bd7918aaf37e
+      internalID: -867953501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc88652fa5f70e47a542caa7a70edf9
+      internalID: 461117211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 784
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51e5742704b6f44d82d9a570e3ea261
+      internalID: 808627793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db984a7b4b225a4f97e14e00f22bcc0
+      internalID: 1930579877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 656
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4feffa68c14cd0f46842dcfe9ab2b6aa
+      internalID: -226870097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_33
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 656
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aabecca893ac834ba08f7b287b0b91e
+      internalID: 374544583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 656
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589ba3905b2f90f43b1e084bc225bcb7
+      internalID: 809756999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_35
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 656
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa486dc0a58c3c4092c7868a37e398d
+      internalID: 1564621453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d103eb4692daa1241b92663147a99552
+      internalID: -468792487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 528
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8958d48cda61fb4db8de6cabacf69e9
+      internalID: -292143880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 528
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112f33990753e77419b263313393400b
+      internalID: -1433205685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 528
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b86d2fbfa994274590af62b29455261
+      internalID: 1895682937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_47
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 528
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a0c6ff33209fa4bbcc01bf31e3f23f
+      internalID: 255303756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb41ac6e0e3c8994b96aa5f06f31f945
+      internalID: -34355097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 401
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e646ac3e166bfbb42abdb7cdca5c8216
+      internalID: 511891385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_56
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 400
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe03f34f3610044d950065a528ccc3d
+      internalID: -578843037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_57
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 400
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c759703d2cd9bd34a9793ec54d792ef8
+      internalID: -1734116760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 400
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c71ec501546f9b46a6598bd0911b7ef
+      internalID: 1007297377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_59
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 400
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbcdd8ba26e7e8489265b3112e9c048
+      internalID: 1955891308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a5f8a832007584eb39226c41bcb3ea
+      internalID: 1406329923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a46125a2fa75040a539b680132a7ab
+      internalID: 2072726020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_69
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269be75eb9ea8744caceb9f3e84a36d5
+      internalID: -1587788861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2547f57d50ba82445ad3674cf9be52d6
+      internalID: 952057361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 272
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65679cff5ce8d9e48b569ff22d2a928b
+      internalID: -1873211159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3160e37e118b0a24da7eae6e1305074c
+      internalID: 836633878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566f88dc23123b143a14553a45b7f87f
+      internalID: -968773104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdfe0e0e02118249a4cc7a554d66167
+      internalID: 2131418932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_82
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13795a289f54bf4bb00d7f4b0322a5d
+      internalID: 1639300498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 144
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6415df817ee2e4e91cd742f875ea0a
+      internalID: -303840778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 255
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c9b2ad45ae1d3499f9f52197ee63de
+      internalID: 756547046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a7d243a0e2ff469aedaabc779924c
+      internalID: 940002296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_02
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 255
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0b7755e44ad214ba9330b230ee8f88
+      internalID: 1185456935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_87
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09e6a08815a3064d9d421c547642d45
+      internalID: 1296493371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_03
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b731b3d0ccfb19c498fe3490ea1510ce
+      internalID: 982132456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_04
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13cebe63db59424498df1e84d253781
+      internalID: 2138097130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_05
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 16
+        width: 255
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4972298c8779c5a409a41465e31090b4
+      internalID: -1875694446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: world_desert_props_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209f7666b3465af4db5cc8d87c2ce886
+      internalID: -2114264169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_06
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 16
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea02d4cdabd0cb4daaf9f10dcf34d47
+      internalID: -302089198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_07
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 160
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1708a93a6d13d7946b2ec6efbce5e386
+      internalID: 1497595470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_08
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 146
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495a05d528c5ed34ca8cd23289080f35
+      internalID: 144922082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: props_09
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 0
+        width: 101
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f1bdb3986397845b563ce9ce147e65
+      internalID: 577474501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      desert: -892047444
+      props_01: 756547046
+      props_02: 1185456935
+      props_03: 982132456
+      props_04: 2138097130
+      props_05: -1875694446
+      props_06: -302089198
+      props_07: 1497595470
+      props_08: 144922082
+      props_09: 577474501
+      world_desert_props_0: -1205086152
+      world_desert_props_1: 1995608914
+      world_desert_props_10: 746401753
+      world_desert_props_11: -271935305
+      world_desert_props_12: -260299358
+      world_desert_props_13: -554515050
+      world_desert_props_14: 313176396
+      world_desert_props_15: 522893227
+      world_desert_props_16: -387016818
+      world_desert_props_17: -1481098791
+      world_desert_props_18: 1872914037
+      world_desert_props_19: 163326512
+      world_desert_props_20: -884405698
+      world_desert_props_21: -867953501
+      world_desert_props_22: 461117211
+      world_desert_props_23: 808627793
+      world_desert_props_24: 1930579877
+      world_desert_props_25: -226870097
+      world_desert_props_26: -561280068
+      world_desert_props_27: -1362726600
+      world_desert_props_28: 756205841
+      world_desert_props_29: 1440356627
+      world_desert_props_3: 1121377044
+      world_desert_props_30: 490659013
+      world_desert_props_31: -524328799
+      world_desert_props_32: 1339126001
+      world_desert_props_33: 374544583
+      world_desert_props_34: 809756999
+      world_desert_props_35: 1564621453
+      world_desert_props_36: -468792487
+      world_desert_props_37: -292143880
+      world_desert_props_38: -278791682
+      world_desert_props_39: 226632696
+      world_desert_props_4: 1294029174
+      world_desert_props_40: -985325955
+      world_desert_props_41: 1898727358
+      world_desert_props_42: -1853295916
+      world_desert_props_43: -1658607596
+      world_desert_props_44: -1212401814
+      world_desert_props_45: -1433205685
+      world_desert_props_46: 1895682937
+      world_desert_props_47: 255303756
+      world_desert_props_48: -34355097
+      world_desert_props_49: 511891385
+      world_desert_props_5: 1517825825
+      world_desert_props_50: 1881110553
+      world_desert_props_51: 191768539
+      world_desert_props_52: -266024043
+      world_desert_props_53: -1277146625
+      world_desert_props_54: -947939703
+      world_desert_props_55: -1249202048
+      world_desert_props_56: -578843037
+      world_desert_props_57: -1734116760
+      world_desert_props_58: 1007297377
+      world_desert_props_59: 1955891308
+      world_desert_props_6: -743261748
+      world_desert_props_60: 1406329923
+      world_desert_props_61: 2072726020
+      world_desert_props_62: -1247363658
+      world_desert_props_63: -1636888802
+      world_desert_props_64: 10082779
+      world_desert_props_65: -10752124
+      world_desert_props_66: -858155719
+      world_desert_props_67: -661386508
+      world_desert_props_68: -1995373259
+      world_desert_props_69: -1587788861
+      world_desert_props_7: 993459575
+      world_desert_props_70: 952057361
+      world_desert_props_71: -1873211159
+      world_desert_props_72: 836633878
+      world_desert_props_73: -968773104
+      world_desert_props_74: 898548380
+      world_desert_props_75: 1484765151
+      world_desert_props_76: 1142557478
+      world_desert_props_77: 1642724227
+      world_desert_props_78: 1236691434
+      world_desert_props_79: -1283486317
+      world_desert_props_8: 872799764
+      world_desert_props_80: 1450870468
+      world_desert_props_81: 2131418932
+      world_desert_props_82: 1639300498
+      world_desert_props_83: -303840778
+      world_desert_props_85: 940002296
+      world_desert_props_87: 1296493371
+      world_desert_props_9: -1620363315
+      world_desert_props_91: -2114264169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
