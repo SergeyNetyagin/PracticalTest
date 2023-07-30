@@ -3,7 +3,7 @@ using UnityEngine;
 namespace NetyaginSergey.TestFor1C {
 
     [ExecuteInEditMode]
-    public class Player : MonoBehaviour, IPerson {
+    public class Player : InteractableObject, IPerson, ICached {
 
         [Space( 10 ), SerializeField]
         private GameSettings game_settings;
@@ -12,11 +12,21 @@ namespace NetyaginSergey.TestFor1C {
         private FireZone fire_zone;
 
         [SerializeField]
-        private GunControl gun_control;
+        private BulletHolder bullet_holder;
 
-        [Space( 10 ), SerializeField, Range( 0f, 1f )]
-        private float health = 1;
-        public float Health => health;
+        [Space( 10 ), SerializeField]
+        private Vector3 player_start_local_position = new Vector3( 0, (-3), 0 );
+
+        private Transform object_transform;
+		public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
+
+        private float motion_speed = 0;
+        public float Motion_speed { get { return motion_speed; } set { motion_speed = value; } }
+
+        private bool is_free_in_cache = true;
+        public bool Is_free_in_cache => is_free_in_cache;
+		public void MakeFree() { is_free_in_cache = true; }
+		public void MakeBusy() { is_free_in_cache = false; }
 
 
         /// <summary>
@@ -25,6 +35,15 @@ namespace NetyaginSergey.TestFor1C {
         private void Start() {
         
             if( Application.isPlaying ) {            
+
+                if( object_transform == null ) { 
+                
+                    object_transform = transform;
+                }
+
+                object_transform.localPosition = player_start_local_position;
+
+                motion_speed = game_settings.Player_motion_speed;
 
                 CheckForFireZone();
 
@@ -72,18 +91,37 @@ namespace NetyaginSergey.TestFor1C {
         /// </summary>
         public void Attacks() { 
                         
+            bullet_holder.Fire();
         }
 
 
         /// <summary>
         /// Damages a pesron.
         /// </summary>
-        public void Damaged() { 
+        public void Damaged( float damage ) { 
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            Debug.Log( "The player has been damaged with damage power " + damage );
+            #endif
+
+            health -= damage;
+
+            if( health > 1 ) { 
+            
+                health = 1;
+            }
+
+            else if( health < 0 ) { 
+            
+                health = 0;
+            }
+
+            OnDamaged?.Invoke( this );
 
             if( health <= 0 ) { 
             
                 Killed();
-            }                        
+            }
         }
 
 
@@ -91,7 +129,51 @@ namespace NetyaginSergey.TestFor1C {
         /// Kills a person.
         /// </summary>
         public void Killed() { 
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            Debug.Log( "The player has been KILLED" );
+            #endif
+
+            health = 0;
+
+            CanvasUIControl.Instance.UpdateHealth( health );
+
+            OnKilled?.Invoke( this );
+        }
+
+
+        /// <summary>
+        /// Activates the specified object and put it under the activation parent.
+        /// </summary>
+        public void Activate( Transform parent_transform ) {
+
+            object_transform.SetParent( parent_transform, false );
+            object_transform.gameObject.SetActive( true );
+            object_transform.localPosition = player_start_local_position;
+            object_transform.localRotation = Quaternion.identity;
+
+            health = game_settings.Enemy_starting_health;
+        }
+
+
+        /// <summary>
+        /// Deactivates the specified object and put it under the pool parent.
+        /// </summary>
+        public void Deactivate( Transform parent_transform ) {
+
+            object_transform.gameObject.SetActive( false );
+        }
+
+
+        /// <summary>
+        /// Damages the player with damage value from settings.
+        /// </summary>
+        #if( UNITY_EDITOR )
+        [ContextMenu( "Damage player" )]
+        #endif
+        private void Damage() { 
             
+            Damaged( game_settings.Bullet_damage );
         }
     }
 }

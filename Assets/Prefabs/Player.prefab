@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 2807173307566109030}
   - component: {fileID: 1223938164765926857}
   m_Layer: 9
-  m_Name: fire-target-collider
+  m_Name: fire-collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,9 +158,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &2807173307566109030
 BoxCollider2D:
@@ -436,6 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5131939660990359328}
   - component: {fileID: 423095968963271313}
+  - component: {fileID: 3122609463796670687}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -471,10 +472,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552fe27705fb14f499ad8aa375f9ad41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   game_settings: {fileID: 11400000, guid: 3db1d8a95c7ebe7409de52725e950439, type: 2}
   fire_zone: {fileID: 2767189085247643109}
-  gun_control: {fileID: 788532253475613428}
-  health: 1
+  bullet_holder: {fileID: 5621899460577327228}
+  player_start_local_position: {x: 0, y: -3, z: 0}
+--- !u!114 &3122609463796670687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4514129934420538166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0593982e16ab4c3469cad3ae5361c189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game_settings: {fileID: 11400000, guid: 3db1d8a95c7ebe7409de52725e950439, type: 2}
+  player: {fileID: 423095968963271313}
+  player_collider: {fileID: 6279586320025732179}
+  move_left_key: 97
+  move_right_key: 100
+  move_up_key: 119
+  move_down_key: 115
 --- !u!1 &4868121022067739927
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e5837a3191d7e3418a2dba569d68c90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_settings: {fileID: 0}
+  bullet_holder_transform: {fileID: 3426189985194654092}
 --- !u!1 &5271041040944594913
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3951866693241439195}
   - component: {fileID: 7865746829782344399}
-  - component: {fileID: 7451575114101350718}
+  - component: {fileID: 6279586320025732179}
   m_Layer: 6
   m_Name: collider
   m_TagString: Untagged
@@ -598,7 +619,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7451575114101350718
+--- !u!114 &6279586320025732179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -607,15 +628,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5271041040944594913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0593982e16ab4c3469cad3ae5361c189, type: 3}
+  m_Script: {fileID: 11500000, guid: d72e4ebe9933535428790cbd386bac60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  control_transform: {fileID: 5131939660990359328}
-  movement_speed_ratio: 1
-  move_left_key: 97
-  move_right_key: 100
-  move_up_key: 119
-  move_down_key: 115
+  damaging_object: {fileID: 423095968963271313}
 --- !u!1 &5769731167969810984
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +673,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5769731167969810984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -710,7 +726,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5769731167969810984}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bda224b8d2b3fe44b8292694f56cbf62, type: 2}
   m_CullingMode: 0
@@ -736,8 +752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game_settings: {fileID: 11400000, guid: 3db1d8a95c7ebe7409de52725e950439, type: 2}
-  target_control: {fileID: 1223938164765926857}
-  bullet_holder: {fileID: 5621899460577327228}
+  player: {fileID: 423095968963271313}
+  fire_collider: {fileID: 1223938164765926857}
   sprite_renderer: {fileID: 8011579069672741407}
   animator: {fileID: 5588342652172253276}
 --- !u!1 &6577600353003787074

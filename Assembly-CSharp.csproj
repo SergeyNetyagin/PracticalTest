@@ -59,47 +59,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CanvasUIControl.cs" />
+    <Compile Include="Assets\Scripts\ICached.cs" />
+    <Compile Include="Assets\Scripts\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\MovementControl.cs" />
-    <Compile Include="Assets\Scripts\Wall.cs" />
+    <Compile Include="Assets\Scripts\InteractableCollider.cs" />
+    <Compile Include="Assets\Scripts\FireCollider.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Effect.cs" />
+    <Compile Include="Assets\Scripts\WallCollider.cs" />
     <Compile Include="Assets\Scripts\FireZone.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\Scripts\PoolEffects.cs" />
     <Compile Include="Assets\Scripts\GameplayManager.cs" />
+    <Compile Include="Assets\Scripts\EventControl.cs" />
     <Compile Include="Assets\Scripts\GunControl.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Packages\Free UI build package\Script\Togglescript.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollider.cs" />
     <Compile Include="Assets\Scripts\GameFieldControl.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\BulletHolder.cs" />
+    <Compile Include="Assets\Scripts\BulletCollider.cs" />
     <Compile Include="Assets\Scripts\ColliderAdapter.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Scripts\PoolEnemies.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Packages\Free UI build package\Script\Slide.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
-    <Compile Include="Assets\Scripts\TargetControl.cs" />
-    <Compile Include="Assets\Scripts\IHuman.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
-    <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Shaders\CFX3 Multiply Color.shader" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Glow.shader" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Ubershader.shader" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\CartoonFX Free.txt" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\Readme Cartoon FX Remaster FREE.txt" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Procedural Ring.shader" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
-    <None Include="Assets\Packages\JMO Assets\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR Particle Distortion.shader" />
+    <Compile Include="Assets\Scripts\Pool.cs" />
+    <Compile Include="Assets\Scripts\EnemyCollider.cs" />
+    <Compile Include="Assets\Scripts\PoolBullets.cs" />
+    <Compile Include="Assets\Scripts\IPerson.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -755,30 +742,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CFXR.WelcomeScreen.csproj">
-      <Project>{57909C89-9254-1F53-FD0E-6B893B139CA9}</Project>
-      <Name>CFXR.WelcomeScreen</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{8312E1EA-832E-8ED6-3860-A9FA5A281DA0}</Project>
-      <Name>CFXRRuntime</Name>
-    </ProjectReference>
-    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{67837AB1-13AB-869A-42DF-BE850F62E4AE}</Project>
-      <Name>ToonyColorsPro.Demo.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{EAEFA16A-A0EA-5109-F5AA-DFB3C018CDBF}</Project>
-      <Name>CFXRDemo</Name>
-    </ProjectReference>
-    <ProjectReference Include="CFXREditor.csproj">
-      <Project>{F575953B-6EEA-FF94-867C-050FA446ABB4}</Project>
-      <Name>CFXREditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{08F42985-C5AA-7527-1E35-46DA2C656692}</Project>
-      <Name>KinoBloom.Runtime</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

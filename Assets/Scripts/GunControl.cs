@@ -8,11 +8,11 @@ namespace NetyaginSergey.TestFor1C {
         [Space( 10 ), SerializeField]
         private GameSettings game_settings;
 
-        [SerializeField]
-        private TargetControl target_control;
+        [Space( 10 ), SerializeField]
+        private Player player;
 
         [SerializeField]
-        private BulletHolder bullet_holder;
+        private FireCollider fire_collider;
 
         [Space( 10 ), SerializeField]
         private SpriteRenderer sprite_renderer;
@@ -49,7 +49,7 @@ namespace NetyaginSergey.TestFor1C {
         
             if( game_settings.Fire_control_mode == FireControlMode.Auto ) { 
                 
-                if( Is_ready_to_fire && target_control.Has_aimed_enemy ) { 
+                if( Is_ready_to_fire && fire_collider.Has_aimed_enemy ) { 
                 
                     Fire();
                 }
@@ -79,7 +79,7 @@ namespace NetyaginSergey.TestFor1C {
 
             Is_ready_to_fire = false;
 
-            bullet_holder.Fire();
+            player.Attacks();
 
             if( shoot_coroutine != null ) { 
             

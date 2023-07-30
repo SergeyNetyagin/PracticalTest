@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb021fb8d1cce1489a8510aa9c1305a, type: 3}
   m_Name: Game Settings
   m_EditorClassIdentifier: 
+  player_motion_speed: 2
   fire_speed: 2
-  bullets_buffer_size: 20
-  bullet_prefab: {fileID: 8097375476254433817, guid: ec8fd04f5c620ea499e798df9f10d4aa, type: 3}
-  fire_control_mode: 1
+  fire_control_mode: 0
   manual_fire_key: 32
   fire_zone_radius: 0.75
   fire_collider_width: 1
+  shoot_visualization_time: 0.25
   show_fire_zone: 1
+  bullet_motion_speed: 7
+  bullet_size: 1
+  bullet_damage: 0.1
+  enemy_session_count_range: {x: 10, y: 20}
+  enemy_spawning_timeout_range: {x: 3, y: 7}
+  enemy_motion_speed_range: {x: 0.5, y: 1}
+  enemy_starting_health: 1

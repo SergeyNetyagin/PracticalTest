@@ -156,7 +156,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: com.NetyaginSergey.Test-for-1C
   buildNumber:
-    Standalone: 20230729001
+    Standalone: 20230730001
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1

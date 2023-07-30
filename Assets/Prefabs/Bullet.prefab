@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 2443730659426294418}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2930060068145764921
 SpriteRenderer:
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddc8454152b8fe4cb8ae491f7f7a1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game_settings: {fileID: 11400000, guid: 3db1d8a95c7ebe7409de52725e950439, type: 2}
 --- !u!1 &6251815509885212406
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,6 +110,7 @@ GameObject:
   - component: {fileID: 2443730659426294418}
   - component: {fileID: 3491613740157077117}
   - component: {fileID: 2554499572678435346}
+  - component: {fileID: 9111209132396701229}
   m_Layer: 8
   m_Name: collider
   m_TagString: Untagged
@@ -139,9 +141,9 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6251815509885212406}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -156,7 +158,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
 --- !u!61 &2554499572678435346
 BoxCollider2D:
@@ -203,3 +205,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.55}
   m_EdgeRadius: 0
+--- !u!114 &9111209132396701229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251815509885212406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a16dd5dfd60274b811af31ac6ac368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8097375476254433817}

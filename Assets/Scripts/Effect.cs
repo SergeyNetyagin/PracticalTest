@@ -1,12 +1,14 @@
-using System.Collections;
 using UnityEngine;
 
 namespace NetyaginSergey.TestFor1C {
 
-    public class Bullet : MonoBehaviour, ICached {
+    public class Effect : MonoBehaviour, ICached {
 
         [Space( 10 ), SerializeField]
         private GameSettings game_settings;
+
+        [Space( 10 ), SerializeField]
+        private EventControl event_control;
 
         private Transform object_transform;
 		public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
@@ -16,15 +18,45 @@ namespace NetyaginSergey.TestFor1C {
 		public void MakeFree() { is_free_in_cache = true; }
 		public void MakeBusy() { is_free_in_cache = false; }
 
-        public float Damage { get; private set; } = 0;
-
 
 		/// <summary>
 		/// Start is called before the first frame update.
 		/// </summary>
 		private void Start() {
         
+            event_control.OnAnimationComplete += Deactivate;
         }
+
+
+		private void OnDestroy() {
+			
+            event_control.OnAnimationComplete -= Deactivate;
+		}
+
+
+        /// <summary>
+        /// Deactivates the effect.
+        /// </summary>
+        private void Deactivate() {
+
+            Deactivate( PoolEffects.Instance.Pool_transform );
+        }
+
+
+		/// <summary>
+		/// Starts running the bullet along its forward axle.
+		/// </summary>
+		public void Run() { 
+			
+			if( !Is_free_in_cache ) { 
+			
+                #if( UNITY_EDITOR || DEBUG_MODE )
+                Debug.LogError( "An attempt to run a bullet busy in the pool!" );
+                #endif
+
+				return;
+			}
+		}
 
 
         /// <summary>
@@ -32,31 +64,10 @@ namespace NetyaginSergey.TestFor1C {
         /// </summary>
         public void Activate( Transform parent_transform ) {
 
-            Damage = game_settings.Bullet_damage;
-
-            float bullet_size = game_settings.Bullet_size;
-
             object_transform.SetParent( parent_transform, false );
             object_transform.gameObject.SetActive( true );
             object_transform.localPosition = Vector3.zero;
             object_transform.localRotation = Quaternion.identity;
-            object_transform.localScale = new Vector3( bullet_size, bullet_size, bullet_size );
-
-            StartCoroutine( MoveBullet() );
-
-            IEnumerator MoveBullet() { 
-            
-                float bullet_speed = game_settings.Bullet_motion_speed;
-
-                while( enabled ) { 
-                
-                    Cached_transform.Translate( 0, bullet_speed * Time.deltaTime, 0, Space.Self );
-
-                    yield return null;
-                }
-
-                yield break;
-            }
         }
 
 
