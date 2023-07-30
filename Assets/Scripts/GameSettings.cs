@@ -11,7 +11,11 @@ namespace NetyaginSergey.TestFor1C {
     [CreateAssetMenu( fileName = "Game Settings", menuName = "NetyaginSergey Test/Game Settings" )]
     public class GameSettings : ScriptableObject {
 
-        [Header( "PLAYER SETTINGS" ), SerializeField, Range( 0.5f, 5f )]
+        [Header( "PLAYER SETTINGS" ), SerializeField, Range( 0.1f, 1f )]
+        private float player_starting_health = 1;
+        public float Player_starting_health => player_starting_health;
+
+        [SerializeField, Range( 0.5f, 5f )]
         private float player_motion_speed = 1;
         public float Player_motion_speed => player_motion_speed;
 

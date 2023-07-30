@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb021fb8d1cce1489a8510aa9c1305a, type: 3}
   m_Name: Game Settings
   m_EditorClassIdentifier: 
+  player_starting_health: 1
   player_motion_speed: 2
   fire_speed: 2
   fire_control_mode: 0
@@ -22,8 +23,8 @@ MonoBehaviour:
   show_fire_zone: 1
   bullet_motion_speed: 7
   bullet_size: 1
-  bullet_damage: 0.1
-  enemy_session_count_range: {x: 10, y: 20}
+  bullet_damage: 0.2
+  enemy_session_count_range: {x: 3, y: 8}
   enemy_spawning_timeout_range: {x: 3, y: 7}
   enemy_motion_speed_range: {x: 0.5, y: 1}
   enemy_starting_health: 1

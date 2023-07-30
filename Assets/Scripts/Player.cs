@@ -1,15 +1,21 @@
+using System;
 using UnityEngine;
 
 namespace NetyaginSergey.TestFor1C {
 
     [ExecuteInEditMode]
-    public class Player : InteractableObject, IPerson, ICached {
+    public class Player : LivingPerson, IPerson, ICached {
+
+        public Action OnDamaged;
 
         [Space( 10 ), SerializeField]
         private GameSettings game_settings;
 
         [Space( 10 ), SerializeField]
         private FireZone fire_zone;
+
+        [SerializeField]
+        private FireCollider fire_collider;
 
         [SerializeField]
         private BulletHolder bullet_holder;
@@ -30,25 +36,37 @@ namespace NetyaginSergey.TestFor1C {
 
 
         /// <summary>
+        /// Awake is called before the first frame update.
+        /// </summary>
+        private void Awake() {
+
+            if( !Application.isPlaying ) {
+
+                return;
+            }
+
+            if( object_transform == null ) { 
+                
+                object_transform = transform;
+            }
+        }
+
+
+        /// <summary>
         /// Start is called before the first frame update.
         /// </summary>
         private void Start() {
         
-            if( Application.isPlaying ) {            
-
-                if( object_transform == null ) { 
-                
-                    object_transform = transform;
-                }
-
-                object_transform.localPosition = player_start_local_position;
-
-                motion_speed = game_settings.Player_motion_speed;
-
-                CheckForFireZone();
+            if( !Application.isPlaying ) {
 
                 return;
             }
+
+            object_transform.localPosition = player_start_local_position;
+
+            motion_speed = game_settings.Player_motion_speed;
+
+            CheckForFireZone();
         }
 
 
@@ -87,6 +105,15 @@ namespace NetyaginSergey.TestFor1C {
 
 
         /// <summary>
+        /// Checks for the inactive specified enemy and exclude it from target list.
+        /// </summary>
+        public void CheckForInactiveEnemy( Enemy enemy ) { 
+            
+            fire_collider.CheckForInactiveEnemy( enemy );
+        }
+
+
+        /// <summary>
         /// Attacks an opponent.
         /// </summary>
         public void Attacks() { 
@@ -100,11 +127,12 @@ namespace NetyaginSergey.TestFor1C {
         /// </summary>
         public void Damaged( float damage ) { 
 
-            #if( UNITY_EDITOR || DEBUG_MODE )
-            Debug.Log( "The player has been damaged with damage power " + damage );
-            #endif
-
             health -= damage;
+
+            if( health < game_settings.Bullet_damage ) { 
+            
+                health = 0;
+            }
 
             if( health > 1 ) { 
             
@@ -116,29 +144,33 @@ namespace NetyaginSergey.TestFor1C {
                 health = 0;
             }
 
-            OnDamaged?.Invoke( this );
+            OnDamaged?.Invoke();
 
             if( health <= 0 ) { 
             
-                Killed();
+                Died();
             }
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            //Debug.Log( "The player has been damaged with damage power " + damage + "; the health is " + health );
+            #endif
         }
 
 
         /// <summary>
         /// Kills a person.
         /// </summary>
-        public void Killed() { 
-
-            #if( UNITY_EDITOR || DEBUG_MODE )
-            Debug.Log( "The player has been KILLED" );
-            #endif
+        public void Died() { 
 
             health = 0;
 
             CanvasUIControl.Instance.UpdateHealth( health );
 
-            OnKilled?.Invoke( this );
+            OnDamaged?.Invoke();
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            Debug.Log( "The player has been KILLED" );
+            #endif
         }
 
 
@@ -152,7 +184,7 @@ namespace NetyaginSergey.TestFor1C {
             object_transform.localPosition = player_start_local_position;
             object_transform.localRotation = Quaternion.identity;
 
-            health = game_settings.Enemy_starting_health;
+            health = game_settings.Player_starting_health;
         }
 
 

@@ -4,6 +4,11 @@ namespace NetyaginSergey.TestFor1C {
 
     public class EnemyCollider : InteractableCollider {
 
+        [SerializeField]
+        private Enemy enemy;
+        public Enemy Enemy => enemy;
+
+
         /// <summary>
         /// Start is called before the first frame update.
         /// </summary>
@@ -37,8 +42,11 @@ namespace NetyaginSergey.TestFor1C {
 
                     GameplayManager.Instance.DamagePlayerOnEnemyFinishReached();
 
+                    enemy.Deactivate( PoolEnemies.Instance.Pool_transform );
+                    enemy.MakeFree();
+
                     #if( UNITY_EDITOR || DEBUG_MODE )
-                    Debug.Log( Damaging_object.name + " reached the finish border and damaged the player" );
+                    //Debug.Log( enemy.name + " reached the finish border and damaged the player; the enemy has been deactivated" );
                     #endif
                 }
             }

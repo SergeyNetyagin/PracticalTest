@@ -53,7 +53,7 @@ namespace NetyaginSergey.TestFor1C {
 
             if( interactable_collider is EnemyCollider ) { 
                 
-                Enemy enemy = interactable_collider.Damaging_object as Enemy;
+                Enemy enemy = interactable_collider.Living_person as Enemy;
 
                 if( enemy == null ) { 
 

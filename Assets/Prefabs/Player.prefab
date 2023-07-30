@@ -475,6 +475,7 @@ MonoBehaviour:
   health: 1
   game_settings: {fileID: 11400000, guid: 3db1d8a95c7ebe7409de52725e950439, type: 2}
   fire_zone: {fileID: 2767189085247643109}
+  fire_collider: {fileID: 1223938164765926857}
   bullet_holder: {fileID: 5621899460577327228}
   player_start_local_position: {x: 0, y: -3, z: 0}
 --- !u!114 &3122609463796670687
@@ -631,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72e4ebe9933535428790cbd386bac60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damaging_object: {fileID: 423095968963271313}
+  living_person: {fileID: 423095968963271313}
 --- !u!1 &5769731167969810984
 GameObject:
   m_ObjectHideFlags: 0

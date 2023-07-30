@@ -26,6 +26,6 @@ namespace NetyaginSergey.TestFor1C {
         /// <summary>
         /// Kills a person.
         /// </summary>
-        void Killed();
+        void Died();
     }
 }

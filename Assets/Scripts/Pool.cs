@@ -16,6 +16,7 @@ namespace NetyaginSergey.TestFor1C {
 
         [Space( 10 ), SerializeField, Range( 10, 100 )]
 		protected int cache_size = 10;
+        public int Cache_size => cache_size;
 
         public int Objects_count => (objects == null) ? list.Count : objects.Length;
 
@@ -23,11 +24,20 @@ namespace NetyaginSergey.TestFor1C {
         
         protected ICached[] objects;
 
+        public bool Pool_is_complete { get; private set; } = false;
+
 
         /// <summary>
         /// Creates a new object and puts it into the pool.
         /// </summary>
-        protected abstract ICached CreateObject();
+        protected virtual ICached CreateObject() { 
+        
+            ICached cached_object = null;
+
+            Pool_is_complete =  (objects != null) && (objects.Length == cache_size);
+
+            return cached_object;
+        }
 
 
         /// <summary>
@@ -51,7 +61,7 @@ namespace NetyaginSergey.TestFor1C {
             while( list.Count < cache_size ) { 
             
                 ICached the_new_object = CreateObject();
-                                
+                               
                 if( the_new_object != null ) {
                 
                     list.Add( the_new_object );
@@ -106,6 +116,172 @@ namespace NetyaginSergey.TestFor1C {
             }
 
             return the_free_object;
+        }
+
+
+        /// <summary>
+        /// Returns true if the all items in the pool are free.
+        /// </summary>
+        public bool AllAreFree() { 
+            
+            bool are_free = true;
+
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    if( !objects[i].Is_free_in_cache ) { 
+                    
+                        are_free = false;
+
+                        break;
+                    }
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    if( !list[i].Is_free_in_cache ) { 
+                    
+                        are_free = false;
+
+                        break;
+                    }
+                }
+            }
+
+            return are_free;
+        }
+
+
+        /// <summary>
+        /// Returns true if the all items in the pool are busy.
+        /// </summary>
+        public bool AllAreBusy() { 
+            
+            bool are_busy = true;
+
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    if( objects[i].Is_free_in_cache ) { 
+                    
+                        are_busy = false;
+
+                        break;
+                    }
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    if( list[i].Is_free_in_cache ) { 
+                    
+                        are_busy = false;
+
+                        break;
+                    }
+                }
+            }
+
+            return are_busy;
+        }
+
+
+        /// <summary>
+        /// Makes the all items in the pool are free.
+        /// </summary>
+        public void MakeAllFree() { 
+            
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    objects[i].MakeFree();
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    list[i].MakeFree();
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Makes the all items in the pool are busy.
+        /// </summary>
+        public void MakeAllBusy() { 
+            
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    objects[i].MakeBusy();
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    list[i].MakeBusy();
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Makes the all items in the pool are active.
+        /// </summary>
+        public void ActivateAll() { 
+            
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    objects[i].Activate( activation_parent_transform );
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    list[i].Activate( activation_parent_transform );
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Makes the all items in the pool are inactive.
+        /// </summary>
+        public void DeactivateAll() { 
+            
+            if( objects != null ) { 
+                
+                for( int i = 0; i < objects.Length; i++ ) { 
+                
+                    objects[i].Deactivate( pool_transform );
+                }
+            }
+
+            else { 
+            
+                for( int i = 0; i < list.Count; i++ ) { 
+                
+                    list[i].Deactivate( pool_transform );
+                }
+            }
         }
     }
 }

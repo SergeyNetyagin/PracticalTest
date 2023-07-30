@@ -1,12 +1,19 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 namespace NetyaginSergey.TestFor1C {
 
-    public class Enemy : InteractableObject, IPerson, ICached {
+    public class Enemy : LivingPerson, IPerson, ICached {
+
+        public Action<Enemy> OnDied;
+        public Action<Enemy> OnDeactivated;
 
         [Space( 10 ), SerializeField]
         private GameSettings game_settings;
+
+        [Space( 10 ), SerializeField]
+        private EnemyCollider enemy_collider;
 
         private Transform object_transform;
 		public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
@@ -29,6 +36,15 @@ namespace NetyaginSergey.TestFor1C {
 
 
         /// <summary>
+        /// OnDestroy is called after the last frame update.
+        /// </summary>
+        private void OnDestroy() {
+        
+            OnDied = null;
+        }
+
+
+        /// <summary>
         /// Attacks an opponent.
         /// </summary>
         public void Attacks() { 
@@ -41,11 +57,12 @@ namespace NetyaginSergey.TestFor1C {
         /// </summary>
         public void Damaged( float damage ) { 
         
-            #if( UNITY_EDITOR || DEBUG_MODE )
-            //Debug.Log( "The enemy " + name + " has been damaged" );
-            #endif
-
             health -= damage;
+
+            if( health < game_settings.Bullet_damage ) { 
+            
+                health = 0;
+            }
 
             if( health > game_settings.Enemy_starting_health ) { 
             
@@ -57,27 +74,32 @@ namespace NetyaginSergey.TestFor1C {
                 health = 0;
             }
 
-            OnDamaged?.Invoke( this );
-
             if( health <= 0 ) { 
             
-                Killed();
+                Died();
             }            
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            //Debug.Log( "The enemy " + name + " has been damaged; the health is " + health );
+            #endif
         }
 
 
         /// <summary>
         /// Kills a person.
         /// </summary>
-        public void Killed() { 
-
-            #if( UNITY_EDITOR || DEBUG_MODE )
-            Debug.Log( "The enemy " + name + " has been damaged" );
-            #endif
+        public void Died() { 
 
             health = 0;
 
-            OnKilled?.Invoke( this );
+            OnDied?.Invoke( this );
+
+            Deactivate( PoolEnemies.Instance.Pool_transform );
+            MakeFree();
+
+            #if( UNITY_EDITOR || DEBUG_MODE )
+            //Debug.Log( "The enemy " + name + " has been KILLED" );
+            #endif
         }
 
 
@@ -116,6 +138,8 @@ namespace NetyaginSergey.TestFor1C {
 
             object_transform.SetParent( parent_transform, true );
             object_transform.gameObject.SetActive( false );
+
+            OnDeactivated?.Invoke( this );
         }
 	}
 }

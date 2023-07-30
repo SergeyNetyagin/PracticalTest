@@ -32,6 +32,8 @@ namespace NetyaginSergey.TestFor1C {
             effect.Cached_transform = effect.transform;
             effect.Deactivate( Pool_transform );
 
+            base.CreateObject();
+
             return effect;
         }
     }

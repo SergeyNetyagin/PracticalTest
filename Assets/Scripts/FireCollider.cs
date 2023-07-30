@@ -1,12 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace NetyaginSergey.TestFor1C {
 
     public class FireCollider : MonoBehaviour {
 
-        public EnemyCollider Aimed_enemy { get; private set; } = null;
+        public bool Has_aimed_enemy => (Aimed_enemies.Count != 0);
 
-        public bool Has_aimed_enemy => (Aimed_enemy != null);
+        private List<Enemy> Aimed_enemies = new List<Enemy>();
 
 
         /// <summary>
@@ -27,7 +28,7 @@ namespace NetyaginSergey.TestFor1C {
                 return;
             }
 
-            EnemyCollider enemy = collider.GetComponent<EnemyCollider>();
+            Enemy enemy = collider.GetComponent<EnemyCollider>()?.Enemy;
 
             if( enemy != null ) {
 
@@ -35,7 +36,10 @@ namespace NetyaginSergey.TestFor1C {
                 //Debug.Log( "The player aimed an enemy " + enemy.name );
                 #endif
 
-                Aimed_enemy = enemy;
+                if( !Aimed_enemies.Contains( enemy ) ) { 
+                
+                    Aimed_enemies.Add( enemy );
+                }
             }
 		}
 
@@ -50,16 +54,31 @@ namespace NetyaginSergey.TestFor1C {
                 return;
             }
 
-            EnemyCollider enemy = collider.GetComponentInParent<EnemyCollider>();
+            Enemy enemy = collider.GetComponent<EnemyCollider>()?.Enemy;
 
             if( enemy != null ) {
 
                 #if( UNITY_EDITOR || DEBUG_MODE )
-                //Debug.Log( "The player shooting line out of the enemy zone " + enemy.name );
+                //Debug.Log( "The player shooting line out of the enemy zone; enemy: " + enemy.name );
                 #endif
 
-                Aimed_enemy = null;
+                if( Aimed_enemies.Contains( enemy ) ) { 
+                
+                    Aimed_enemies.Remove( enemy );
+                }
             }
 		}
+
+
+        /// <summary>
+        /// Checks for the inactive specified enemy and exclude it from target list.
+        /// </summary>
+        public void CheckForInactiveEnemy( Enemy enemy ) { 
+            
+            if( Aimed_enemies.Contains( enemy ) ) { 
+                
+                Aimed_enemies.Remove( enemy );
+            }
+        }
     }
 }

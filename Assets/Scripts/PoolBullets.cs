@@ -33,6 +33,8 @@ namespace NetyaginSergey.TestFor1C {
             bullet.Cached_transform = bullet.transform;
             bullet.Deactivate( Pool_transform );
 
+            base.CreateObject();
+
             return bullet;
         }
     }

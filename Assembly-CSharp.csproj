@@ -65,8 +65,8 @@
     <Compile Include="Assets\Scripts\InteractableCollider.cs" />
     <Compile Include="Assets\Scripts\FireCollider.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Effect.cs" />
     <Compile Include="Assets\Scripts\WallCollider.cs" />
+    <Compile Include="Assets\Scripts\Effect.cs" />
     <Compile Include="Assets\Scripts\FireZone.cs" />
     <Compile Include="Assets\Scripts\PoolEffects.cs" />
     <Compile Include="Assets\Scripts\GameplayManager.cs" />
