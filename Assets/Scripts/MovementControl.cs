@@ -64,5 +64,5 @@ namespace NetyaginSergey.TestFor1C {
                 player_transform.Translate( 0, (- movement), 0, Space.Self );
             }
         }
-	}
+    }
 }
