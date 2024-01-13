@@ -15,23 +15,23 @@ namespace NetyaginSergey.TestFor1C {
 
         private bool is_free_in_cache = true;
         public bool Is_free_in_cache => is_free_in_cache;
-		public void MakeFree() { is_free_in_cache = true; }
-		public void MakeBusy() { is_free_in_cache = false; }
+	public void MakeFree() { is_free_in_cache = true; }
+	public void MakeBusy() { is_free_in_cache = false; }
 
 
-		/// <summary>
-		/// Start is called before the first frame update.
-		/// </summary>
-		private void Start() {
+	/// <summary>
+	/// Start is called before the first frame update.
+	/// </summary>
+	private void Start() {
         
             event_control.OnAnimationComplete += Deactivate;
         }
 
 
-		private void OnDestroy() {
+	private void OnDestroy() {
 			
             event_control.OnAnimationComplete -= Deactivate;
-		}
+	}
 
 
         /// <summary>
@@ -43,20 +43,20 @@ namespace NetyaginSergey.TestFor1C {
         }
 
 
-		/// <summary>
-		/// Starts running the bullet along its forward axle.
-		/// </summary>
-		public void Run() { 
-			
-			if( !Is_free_in_cache ) { 
-			
-                #if( UNITY_EDITOR || DEBUG_MODE )
-                Debug.LogError( "An attempt to run a bullet busy in the pool!" );
-                #endif
+	/// <summary>
+	/// Starts running the bullet along its forward axle.
+	/// </summary>
+	public void Run() { 
+		
+		if( !Is_free_in_cache ) { 
+		
+			#if( UNITY_EDITOR || DEBUG_MODE )
+			Debug.LogError( "An attempt to run a bullet busy in the pool!" );
+			#endif
 
-				return;
-			}
+			return;
 		}
+	}
 
 
         /// <summary>
