@@ -25,10 +25,10 @@ namespace NetyaginSergey.TestFor1C {
         }
 
 
-		/// <summary>
-		/// Creates a new object and puts it into the pool.
-		/// </summary>
-		protected override ICached CreateObject() { 
+	/// <summary>
+	/// Creates a new object and puts it into the pool.
+	/// </summary>
+	protected override ICached CreateObject() { 
             
             Enemy enemy = Instantiate( enemy_prefab, pool_transform );
 
