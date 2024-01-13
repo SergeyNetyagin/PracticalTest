@@ -60,12 +60,12 @@ namespace NetyaginSergey.TestFor1C {
         /// <summary>
         /// OnDestroy is called before the object destroying.
         /// </summary>
-		private void OnDestroy() {
+	private void OnDestroy() {
 
             PoolEnemies.Instance.OnCreateEnemy -= CheckForEnemyCreation;
 
             player.OnDamaged -= CheckForPlayerState;
-		}
+	}
 
 
         /// <summary>
@@ -174,28 +174,28 @@ namespace NetyaginSergey.TestFor1C {
         }
 
 
-		/// <summary>
-		/// Checks for the enemy died.
-		/// </summary>
-		private void CheckForEnemyDied( Enemy enemy ) {
+	/// <summary>
+	/// Checks for the enemy died.
+	/// </summary>
+	private void CheckForEnemyDied( Enemy enemy ) {
 
             player.CheckForInactiveEnemy( enemy );
         }
 
 
-		/// <summary>
-		/// Checks for the enemy deactivated.
-		/// </summary>
-		private void CheckForEnemyDeactivated( Enemy enemy ) {
+	/// <summary>
+	/// Checks for the enemy deactivated.
+	/// </summary>
+	private void CheckForEnemyDeactivated( Enemy enemy ) {
 
             player.CheckForInactiveEnemy( enemy );
         }
 
 
-		/// <summary>
-		/// Controls the spawning process.
-		/// </summary>
-		private IEnumerator SpawnControl() { 
+	/// <summary>
+	/// Controls the spawning process.
+	/// </summary>
+	private IEnumerator SpawnControl() { 
 
             while( PoolEnemies.Instance.Objects_count == 0 ) { 
             
