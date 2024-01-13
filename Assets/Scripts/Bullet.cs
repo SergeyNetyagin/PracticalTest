@@ -9,20 +9,20 @@ namespace NetyaginSergey.TestFor1C {
         private GameSettings game_settings;
 
         private Transform object_transform;
-		public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
+	public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
 
         private bool is_free_in_cache = true;
         public bool Is_free_in_cache => is_free_in_cache;
-		public void MakeFree() { is_free_in_cache = true; }
-		public void MakeBusy() { is_free_in_cache = false; }
+	public void MakeFree() { is_free_in_cache = true; }
+	public void MakeBusy() { is_free_in_cache = false; }
 
         public float Damage { get; private set; } = 0;
 
 
-		/// <summary>
-		/// Start is called before the first frame update.
-		/// </summary>
-		private void Start() {
+	/// <summary>
+	/// Start is called before the first frame update.
+	/// </summary>
+	private void Start() {
         
         }
 
