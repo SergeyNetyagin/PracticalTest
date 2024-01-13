@@ -21,7 +21,7 @@ namespace NetyaginSergey.TestFor1C {
         /// <summary>
         /// Detects other collider enter.
         /// </summary>
-		private void OnTriggerEnter2D( Collider2D collider ) {
+	private void OnTriggerEnter2D( Collider2D collider ) {
 
             if( collider == null ) { 
 
@@ -56,13 +56,13 @@ namespace NetyaginSergey.TestFor1C {
                     Is_movable_right = false;
                 }
             }
-		}
+	}
 
 
         /// <summary>
         /// Detects other collider exit.
         /// </summary>
-		private void OnTriggerExit2D( Collider2D collider ) {
+	private void OnTriggerExit2D( Collider2D collider ) {
 
             if( collider == null ) { 
 
@@ -97,6 +97,6 @@ namespace NetyaginSergey.TestFor1C {
                     Is_movable_right = true;
                 }
             }
-		}
 	}
+    }
 }
