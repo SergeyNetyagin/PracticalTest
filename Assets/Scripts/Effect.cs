@@ -11,7 +11,7 @@ namespace NetyaginSergey.TestFor1C {
         private EventControl event_control;
 
         private Transform object_transform;
-		public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
+	public Transform Cached_transform { get { return object_transform; } set { object_transform = value; } }
 
         private bool is_free_in_cache = true;
         public bool Is_free_in_cache => is_free_in_cache;
