@@ -31,8 +31,8 @@ namespace NetyaginSergey.TestFor1C {
 
         private bool is_free_in_cache = true;
         public bool Is_free_in_cache => is_free_in_cache;
-		public void MakeFree() { is_free_in_cache = true; }
-		public void MakeBusy() { is_free_in_cache = false; }
+	public void MakeFree() { is_free_in_cache = true; }
+	public void MakeBusy() { is_free_in_cache = false; }
 
 
         /// <summary>
