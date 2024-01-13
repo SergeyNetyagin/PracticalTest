@@ -15,7 +15,7 @@ namespace NetyaginSergey.TestFor1C {
         public Transform Activation_parent_transform => activation_parent_transform;
 
         [Space( 10 ), SerializeField, Range( 10, 100 )]
-		protected int cache_size = 10;
+	protected int cache_size = 10;
         public int Cache_size => cache_size;
 
         public int Objects_count => (objects == null) ? list.Count : objects.Length;
