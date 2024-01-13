@@ -19,7 +19,7 @@ namespace NetyaginSergey.TestFor1C {
         /// <summary>
         /// Detects other collider enter.
         /// </summary>
-		private void OnTriggerEnter2D( Collider2D collider ) {
+	private void OnTriggerEnter2D( Collider2D collider ) {
 
             if( collider == null ) { 
 
